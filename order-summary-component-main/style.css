@@ -1,0 +1,141 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-image: url(images/pattern-background-desktop.svg);
+  background-color: hsl(225, 100%, 94%);
+  background-position: top center;
+  background-repeat: no-repeat;
+  font-family: "Red Hat Display", sans-serif;
+}
+
+.container {
+  display: flex;
+  width: 100%;
+  height: 100vh;
+}
+
+.petter {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: white;
+  width: 25%;
+  margin: auto;
+  border-radius: 1rem;
+  box-shadow: 1px 6px 6px 4px hsla(245, 75%, 52%, 0.096);
+}
+
+@media screen and (max-width: 600px) {
+  .petter {
+    width: 80%;
+  }
+}
+
+@media screen and (min-width: 600px) and (max-width: 800px) {
+  .petter {
+    width: 60%;
+  }
+}
+
+@media screen and (min-width: 800px) and (max-width: 1200px) {
+  .petter {
+    width: 40%;
+  }
+}
+.img {
+  border-radius: 1rem 1rem 0 0;
+}
+
+.title,
+.parrafo {
+  text-align: center;
+  width: 80%;
+  margin: auto;
+}
+
+.title {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  font-weight: 700;
+}
+
+.parrafo {
+  color: grey;
+  margin-bottom: 1.5rem;
+  font-size: 0.9rem;
+}
+
+.precio {
+  color: gray;
+  font-size: 0.8rem;
+}
+
+.plan {
+  font-size: 0.9rem;
+}
+
+.change {
+  font-size: 14px;
+}
+
+.change:hover {
+  color: hsl(245, 57%, 61%);
+  text-decoration: none;
+}
+
+.order {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: hsla(225, 100%, 94%, 0.363);
+  border-radius: 5px;
+  margin-bottom: 1rem;
+  margin-left: auto;
+  margin-right: auto;
+  width: 70%;
+  padding: 1rem;
+}
+
+.summer {
+  display: flex;
+  justify-content: flex-start;
+  gap: 1rem;
+  align-items: center;
+}
+
+.boton {
+  display: flex;
+  justify-content: center;
+}
+
+.btn {
+  border: none;
+  background-color: hsl(245, 75%, 52%);
+  padding: 14px 1rem;
+  color: white;
+  border-radius: 5px;
+  width: 80%;
+  box-shadow: 0px 5px 5px 3px hsl(225deg 47.73% 82.22% / 55.5%);
+  cursor: pointer;
+  font-weight: 700;
+}
+
+.btn:hover {
+  background-color: hsl(245, 57%, 61%);
+}
+
+.cancel {
+  display: flex;
+  justify-content: center;
+  margin: 1rem 0 2rem 0;
+  color: gray;
+  font-size: 0.9rem;
+  cursor: pointer;
+}
+
+.cancel:hover {
+  color: rgb(22, 20, 20);
+}
